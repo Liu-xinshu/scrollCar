@@ -1,0 +1,36 @@
+.home {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    ul {
+        width: 100px;
+        height: 100%;
+        li {
+            margin: 15px 0;
+            &.active {
+                color: red;
+            }
+        }
+    }
+}
+
+.scroll {
+    flex: 1;
+    overflow: hidden;
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+dd div {
+    display: flex;
+    &>div:nth-child(2) {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        >span {
+            margin: 0 5px;
+        }
+    }
+}
